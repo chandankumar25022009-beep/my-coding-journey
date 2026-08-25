@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Quiz App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="quiz-container">
+
+        <div class="quiz-card">
+
+            <div class="quiz-header">
+
+                <h1>🧠 Coding Quiz</h1>
+
+                <p id="questionNumber">
+                    Question 1 of 10
+                </p>
+
+            </div>
+
+
+            <div class="progress-container">
+
+                <div id="progressBar"></div>
+
+            </div>
+
+
+            <section id="quizScreen">
+
+                <h2 id="question">
+                    Question will appear here
+                </h2>
+
+                <div id="options"></div>
+
+                <p id="feedback"></p>
+
+                <button id="nextButton">
+                    Next Question
+                </button>
+
+            </section>
+
+
+            <section id="resultScreen">
+
+                <div class="result-icon">
+                    🎉
+                </div>
+
+                <h2>Quiz Completed!</h2>
+
+                <p>Your Score</p>
+
+                <div id="score">
+                    0 / 10
+                </div>
+
+                <button id="restartButton">
+                    Restart Quiz
+                </button>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
