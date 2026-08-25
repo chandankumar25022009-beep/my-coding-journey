@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ShopKart - E-Commerce</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="#" class="logo">
+                Shop<span>Kart</span>
+            </a>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+
+                <button id="searchButton">
+                    🔍
+                </button>
+
+            </div>
+
+            <button class="cart-button" id="cartButton">
+                🛒 Cart
+                <span id="cartCount">0</span>
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <div>
+
+            <p>BIG SAVINGS</p>
+
+            <h1>
+                Upgrade Your
+                <span>Everyday Life.</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover quality products at affordable prices.
+            </p>
+
+            <a href="#products" class="shop-button">
+                Shop Now
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+
+    <section class="categories">
+
+        <div class="container">
+
+            <h2>Shop By Category</h2>
+
+            <div class="category-grid">
+
+                <button class="category" data-category="all">
+                    🛍️
+                    <span>All</span>
+                </button>
+
+                <button class="category" data-category="electronics">
+                    💻
+                    <span>Electronics</span>
+                </button>
+
+                <button class="category" data-category="fashion">
+                    👕
+                    <span>Fashion</span>
+                </button>
+
+                <button class="category" data-category="home">
+                    🏠
+                    <span>Home</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Products -->
+
+    <section id="products" class="products-section">
+
+        <div class="container">
+
+            <p class="section-label">
+                FEATURED PRODUCTS
+            </p>
+
+            <h2>Popular Products</h2>
+
+            <div id="productGrid" class="product-grid">
+
+
+                <article
+                    class="product-card"
+                    data-category="electronics"
+                    data-name="Wireless Headphones"
+                >
+
+                    <div class="product-image">
+                        🎧
+                    </div>
+
+                    <h3>Wireless Headphones</h3>
+
+                    <p>
+                        Comfortable wireless headphones
+                        with clear sound.
+                    </p>
+
+                    <strong>₹1,499</strong>
+
+                    <button
+                        class="add-button"
+                        data-product="Wireless Headphones"
+                    >
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <article
+                    class="product-card"
+                    data-category="electronics"
+                    data-name="Smart Watch"
+                >
+
+                    <div class="product-image">
+                        ⌚
+                    </div>
+
+                    <h3>Smart Watch</h3>
+
+                    <p>
+                        Smart watch with useful daily
+                        features.
+                    </p>
+
+                    <strong>₹2,499</strong>
+
+                    <button
+                        class="add-button"
+                        data-product="Smart Watch"
+                    >
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <article
+                    class="product-card"
+                    data-category="fashion"
+                    data-name="Casual T-Shirt"
+                >
+
+                    <div class="product-image">
+                        👕
+                    </div>
+
+                    <h3>Casual T-Shirt</h3>
+
+                    <p>
+                        Comfortable everyday casual
+                        cotton T-shirt.
+                    </p>
+
+                    <strong>₹599</strong>
+
+                    <button
+                        class="add-button"
+                        data-product="Casual T-Shirt"
+                    >
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <article
+                    class="product-card"
+                    data-category="fashion"
+                    data-name="Running Shoes"
+                >
+
+                    <div class="product-image">
+                        👟
+                    </div>
+
+                    <h3>Running Shoes</h3>
+
+                    <p>
+                        Lightweight shoes for everyday
+                        activities.
+                    </p>
+
+                    <strong>₹1,999</strong>
+
+                    <button
+                        class="add-button"
+                        data-product="Running Shoes"
+                    >
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <article
+                    class="product-card"
+                    data-category="home"
+                    data-name="Table Lamp"
+                >
+
+                    <div class="product-image">
+                        💡
+                    </div>
+
+                    <h3>Table Lamp</h3>
+
+                    <p>
+                        Simple modern lamp for your
+                        study table.
+                    </p>
+
+                    <strong>₹799</strong>
+
+                    <button
+                        class="add-button"
+                        data-product="Table Lamp"
+                    >
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <article
+                    class="product-card"
+                    data-category="home"
+                    data-name="Coffee Mug"
+                >
+
+                    <div class="product-image">
+                        ☕
+                    </div>
+
+                    <h3>Coffee Mug</h3>
+
+                    <p>
+                        Stylish ceramic mug for your
+                        everyday drinks.
+                    </p>
+
+                    <strong>₹299</strong>
+
+                    <button
+                        class="add-button"
+                        data-product="Coffee Mug"
+                    >
+                        Add to Cart
+                    </button>
+
+                </article>
+
+            </div>
+
+            <p id="noProducts">
+                No products found.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Cart Message -->
+
+    <div id="cartMessage"></div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="container">
+
+            <h3>ShopKart</h3>
+
+            <p>
+                A demo e-commerce website built with
+                HTML, CSS and JavaScript.
+            </p>
+
+            <p>
+                © <span id="year"></span> ShopKart
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
